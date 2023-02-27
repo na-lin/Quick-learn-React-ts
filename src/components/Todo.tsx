@@ -1,10 +1,13 @@
 import React from "react";
 
-export default function Todo() {
+const Todo: React.FC<{ items: string[] }> = (props) => {
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Learn Typescript</li>
+      {props.items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
     </ul>
   );
-}
+};
+
+export default Todo;

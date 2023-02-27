@@ -5,7 +5,7 @@ import Todo from "./components/Todo";
 function App() {
   return (
     <div>
-      <Todo />
+      <Todo items={["learn React", "Learn Typescript"]} />
     </div>
   );
 }
